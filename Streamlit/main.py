@@ -17,7 +17,7 @@ def teachable_machine_classification(img, weights_file):
     return prediction
 
 
-uploaded_file = st.file_uploader("Choose a brain MRI ...", type=["jpg","png","jpeg"])
+uploaded_file = st.file_uploader("Choose an image ...", type=["jpg","png","jpeg"])
 if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Image.', use_column_width=True)
